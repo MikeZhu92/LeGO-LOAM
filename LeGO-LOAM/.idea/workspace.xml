@@ -2,108 +2,108 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="lego_loam" targetName="transformFusion" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_py" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="gmock_main" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="gtest" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tests" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="gmock" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="mapOptmization" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_py" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_py" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="run_tests" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="nodelet_topic_tools_gencfg" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="doxygen" />
-      <config projectName="lego_loam" targetName="featureAssociation" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="imageProjection" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="_catkin_empty_exported_target" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="download_extra_data" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="pcl_ros_gencfg" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="gtest_main" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_py" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="clean_test_results" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_lisp" />
       <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_py" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_py" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="download_extra_data" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_py" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="pcl_ros_gencfg" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_lisp" />
       <config projectName="lego_loam" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="gtest" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="featureAssociation" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="clean_test_results" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="lego_loam" targetName="tf_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="gmock_main" />
+      <config projectName="lego_loam" targetName="doxygen" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_py" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="imageProjection" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="transformFusion" />
+      <config projectName="lego_loam" targetName="nodelet_topic_tools_gencfg" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="mapOptmization" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="gmock" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="gtest_main" />
+      <config projectName="lego_loam" targetName="_catkin_empty_exported_target" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="tests" />
+      <config projectName="lego_loam" targetName="run_tests" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -113,10 +113,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e638824e-9952-44e3-abd6-6ac53fd6067b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LeGO-LOAM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utility.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/run.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/run.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/run_apollo.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/run_apollo.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/featureAssociation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/featureAssociation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imageProjection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/imageProjection.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/../../../build/" />
@@ -131,35 +133,112 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/src/imageProjection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="1095">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#1666#1686#0" expanded="true" />
+                <element signature="e#7282#8718#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/launch/run.launch">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/featureAssociation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="661">
+              <caret line="924" column="82" selection-start-line="924" selection-start-column="82" selection-end-line="924" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mapOptmization.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="285" column="62" lean-forward="true" selection-start-line="285" selection-start-column="62" selection-end-line="285" selection-end-column="62" />
+              <folding>
+                <element signature="e#2120#2140#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/utility.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+              <folding>
+                <element signature="e#71#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/launch/run_apollo.launch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/launch/run_kitti.launch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/launch/run.launch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>PointType</find>
+      <find>projectPointCloud</find>
+      <find>cloudHandler</find>
+      <find>rangeMat</find>
+      <find>fullCloud</find>
+      <find>labelComponents</find>
+      <find>pcl::</find>
+      <find>laserOdometry2</find>
+      <find>/laser_cloud</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/launch/rosbag_play.launch" />
+        <option value="$PROJECT_DIR$/launch/run_kitti.launch" />
+        <option value="$PROJECT_DIR$/launch/run.launch" />
+        <option value="$PROJECT_DIR$/src/imageProjection.cpp" />
+        <option value="$PROJECT_DIR$/src/featureAssociation.cpp" />
+        <option value="$PROJECT_DIR$/include/utility.h" />
+        <option value="$PROJECT_DIR$/launch/run_apollo.launch" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1975" />
     <option name="y" value="-4" />
@@ -172,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,16 +285,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/launch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/launch" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,7 +400,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_cpp" CONFIG_NAME="Release">
+    <configuration name="cloud_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -741,12 +825,25 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lego_loam" type="CompoundRunConfigurationType">
+      <toRun name="transformFusion" type="CMakeRunConfiguration" />
+      <toRun name="featureAssociation" type="CMakeRunConfiguration" />
+      <toRun name="mapOptmization" type="CMakeRunConfiguration" />
+      <toRun name="imageProjection" type="CMakeRunConfiguration" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="transformFusion" type="CMakeRunConfiguration" />
+      <toRun name="featureAssociation" type="CMakeRunConfiguration" />
+      <toRun name="mapOptmization" type="CMakeRunConfiguration" />
+      <toRun name="imageProjection" type="CMakeRunConfiguration" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="CMake Application.imageProjection" />
       <item itemvalue="CMake Application.featureAssociation" />
       <item itemvalue="CMake Application.mapOptmization" />
       <item itemvalue="CMake Application.transformFusion" />
-      <item itemvalue="CMake Application.cloud_msgs_generate_messages_cpp" />
       <item itemvalue="CMake Application._catkin_empty_exported_target" />
       <item itemvalue="CMake Application.actionlib_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_generate_messages_eus" />
@@ -767,6 +864,7 @@
       <item itemvalue="CMake Application.cloud_msgs_generate_messages_eus" />
       <item itemvalue="CMake Application.cloud_msgs_generate_messages_lisp" />
       <item itemvalue="CMake Application.cloud_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.cloud_msgs_generate_messages_cpp" />
       <item itemvalue="CMake Application.cloud_msgs_generate_messages_nodejs" />
       <item itemvalue="CMake Application.download_extra_data" />
       <item itemvalue="CMake Application.doxygen" />
@@ -844,6 +942,7 @@
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Compound.Lego_loam" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -856,12 +955,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559757274188</updated>
-      <workItem from="1559757276471" duration="905000" />
+      <workItem from="1559757276471" duration="11557000" />
+      <workItem from="1559832045971" duration="16964000" />
+      <workItem from="1559918573099" duration="7933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="905000" />
+    <option name="totallyTimeSpent" value="36454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -873,50 +974,153 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1975" y="-4" width="1865" height="1084" extended-state="6" />
+    <frame x="1975" y="24" width="1865" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15338098" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49794802" weight="0.14183617" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" sideWeight="0.502052" visible="true" weight="0.19131391" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.43485433" weight="0.3294979" />
-      <window_info anchor="bottom" id="CMake" order="3" weight="0.2416318" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.5299615" visible="true" weight="0.27301255" />
+      <window_info anchor="bottom" id="CMake" order="3" sideWeight="0.5233645" visible="true" weight="0.46875" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5651457" side_tool="true" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.47663552" side_tool="true" visible="true" weight="0.46875" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.5002749" side_tool="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5002749" side_tool="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.63276523" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Version Control" order="13" side_tool="true" weight="0.3294979" />
-      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/utility.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/launch/rosbag_play.launch" />
+    <entry file="file:///usr/include/pcl-1.7/pcl/impl/point_types.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/5/include/float.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../devel/.private/cloud_msgs/include/cloud_msgs/cloud_info.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#159#176#0" expanded="true" />
+            <element signature="e#404#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/cmath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/x86_64-linux-gnu/sys/types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="193" column="20" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/hal/interface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageProjection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#1666#1686#0" expanded="true" />
+            <element signature="e#7282#8718#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run_kitti.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/launch/run.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="330">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformFusion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utility.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#71#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mapOptmization.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="285" column="62" lean-forward="true" selection-start-line="285" selection-start-column="62" selection-end-line="285" selection-end-column="62" />
+          <folding>
+            <element signature="e#2120#2140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/featureAssociation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="924" column="82" selection-start-line="924" selection-start-column="82" selection-end-line="924" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run_apollo.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>

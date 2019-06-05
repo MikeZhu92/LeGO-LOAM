@@ -803,47 +803,6 @@ public:
 	    }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     void TransformToStart(PointType const * const pi, PointType * const po)
     {
         float s = 10 * (pi->intensity - int(pi->intensity));
