@@ -27,6 +27,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #include "utility.h"
+#include <opencv2/highgui/highgui.hpp>  // MK
 
 
 class ImageProjection{
@@ -60,6 +61,7 @@ private:
     cv::Mat rangeMat;
     cv::Mat labelMat;
     cv::Mat groundMat;
+    cv::Mat testMat;   // mk
     int labelCount;
 
     float startOrientation;
@@ -145,6 +147,7 @@ public:
         rangeMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32F, cv::Scalar::all(FLT_MAX));
         groundMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8S, cv::Scalar::all(0));
         labelMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32S, cv::Scalar::all(0));
+        testMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8U, cv::Scalar(0));  //mk
         labelCount = 1;
 
         std::fill(fullCloud->points.begin(), fullCloud->points.end(), nanPoint);
@@ -165,6 +168,10 @@ public:
         findStartEndAngle();
         projectPointCloud();
         groundRemoval();
+        // mk for visualization
+//        cv::imshow("rangeMat", testMat);
+//        cvWaitKey(5);
+
         cloudSegmentation();
         publishCloud();
         resetParameters();
@@ -173,7 +180,7 @@ public:
     void findStartEndAngle(){
         segMsg.startOrientation = -atan2(laserCloudIn->points[0].y, laserCloudIn->points[0].x);
         segMsg.endOrientation   = -atan2(laserCloudIn->points[laserCloudIn->points.size() - 1].y,
-                                                     laserCloudIn->points[laserCloudIn->points.size() - 2].x) + 2 * M_PI;
+                                         laserCloudIn->points[laserCloudIn->points.size() - 2].x) + 2 * M_PI;
         if (segMsg.endOrientation - segMsg.startOrientation > 3 * M_PI) {
             segMsg.endOrientation -= 2 * M_PI;
         } else if (segMsg.endOrientation - segMsg.startOrientation < M_PI)
@@ -193,6 +200,11 @@ public:
             thisPoint.x = laserCloudIn->points[i].x;
             thisPoint.y = laserCloudIn->points[i].y;
             thisPoint.z = laserCloudIn->points[i].z;
+
+            if (std::isnan(thisPoint.x) || std::isnan(thisPoint.y) ||
+                std::isnan(thisPoint.z)) {
+                continue;  // avoid invalid point
+            }
 
             verticalAngle = atan2(thisPoint.z, sqrt(thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y)) * 180 / M_PI;
             rowIdn = (verticalAngle + ang_bottom) / ang_res_y;
@@ -220,14 +232,12 @@ public:
         }
     }
 
-
     void groundRemoval(){
         size_t lowerInd, upperInd;
         float diffX, diffY, diffZ, angle;
 
         for (size_t j = 0; j < Horizon_SCAN; ++j){
             for (size_t i = 0; i < groundScanInd; ++i){
-
                 lowerInd = j + ( i )*Horizon_SCAN;
                 upperInd = j + (i+1)*Horizon_SCAN;
 
@@ -453,16 +463,19 @@ public:
 };
 
 
-
-
 int main(int argc, char** argv){
 
     ros::init(argc, argv, "lego_loam");
-    
+
+    cv::namedWindow("rangeMat");
+    cv::startWindowThread();
+
     ImageProjection IP;
 
     ROS_INFO("\033[1;32m---->\033[0m Image Projection Started.");
 
     ros::spin();
+
+    cv::destroyWindow("rangeMat");
     return 0;
 }
