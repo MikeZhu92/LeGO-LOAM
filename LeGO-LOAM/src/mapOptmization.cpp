@@ -145,6 +145,7 @@ private:
     pcl::PointCloud<PointType>::Ptr globalMapKeyPosesDS;
     pcl::PointCloud<PointType>::Ptr globalMapKeyFrames;
     pcl::PointCloud<PointType>::Ptr globalMapKeyFramesDS;
+    pcl::PointCloud<PointType>::Ptr latestGlobalMapKeyFramesDS; // for saving the final map pointcloud
 
     std::vector<int> pointSearchInd;
     std::vector<float> pointSearchSqDis;
@@ -309,6 +310,7 @@ public:
         globalMapKeyPosesDS.reset(new pcl::PointCloud<PointType>());
         globalMapKeyFrames.reset(new pcl::PointCloud<PointType>());
         globalMapKeyFramesDS.reset(new pcl::PointCloud<PointType>());
+        latestGlobalMapKeyFramesDS.reset(new pcl::PointCloud<PointType>()); // final map ptr for saving pcd
 
         timeLaserCloudCornerLast = 0;
         timeLaserCloudSurfLast = 0;
@@ -704,7 +706,8 @@ public:
 	// save final point cloud
         string fileName = fileDirectory;
         fileName.append("finalCloud.pcd");
-        pcl::io::savePCDFileASCII(fileName, *globalMapKeyFramesDS);
+        if (!latestGlobalMapKeyFramesDS->points.empty())
+            pcl::io::savePCDFileASCII(fileName, *latestGlobalMapKeyFramesDS);
 
         string cornerMapString = "/tmp/cornerMap.pcd";
         string surfaceMapString = "/tmp/surfaceMap.pcd";
@@ -726,9 +729,12 @@ public:
         downSizeFilterSurf.setInputCloud(surfaceMapCloud);
         downSizeFilterSurf.filter(*surfaceMapCloudDS);
 
-        pcl::io::savePCDFileASCII(cornerMapString, *cornerMapCloudDS);
-        pcl::io::savePCDFileASCII(surfaceMapString, *surfaceMapCloudDS);
-        pcl::io::savePCDFileASCII(trajectoryString, *cloudKeyPoses3D);
+        if (!cornerMapCloudDS->points.empty())
+            pcl::io::savePCDFileASCII(cornerMapString, *cornerMapCloudDS);
+        if (!surfaceMapCloudDS->points.empty())
+            pcl::io::savePCDFileASCII(surfaceMapString, *surfaceMapCloudDS);
+        if (!cloudKeyPoses3D->points.empty())
+            pcl::io::savePCDFileASCII(trajectoryString, *cloudKeyPoses3D);
     }
 
     void publishGlobalMap(){
@@ -767,12 +773,15 @@ public:
         pcl::toROSMsg(*globalMapKeyFramesDS, cloudMsgTemp);
         cloudMsgTemp.header.stamp = ros::Time().fromSec(timeLaserOdometry);
         cloudMsgTemp.header.frame_id = "/camera_init";
-        pubLaserCloudSurround.publish(cloudMsgTemp);  
+        pubLaserCloudSurround.publish(cloudMsgTemp);
+
+        if (!globalMapKeyFrames->points.empty())
+          latestGlobalMapKeyFramesDS.swap(globalMapKeyFrames);  // update the latest final map
 
         globalMapKeyPoses->clear();
         globalMapKeyPosesDS->clear();
         globalMapKeyFrames->clear();
-        globalMapKeyFramesDS->clear();     
+        globalMapKeyFramesDS->clear();
     }
 
     void loopClosureThread(){
