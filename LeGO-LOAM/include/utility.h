@@ -128,6 +128,18 @@ extern const float historyKeyframeFitnessScore = 0.3; // the smaller the better 
 
 extern const float globalMapVisualizationSearchRadius = 500.0; // key frames with in n meters will be visualized
 
+/*
+ * Utility function
+ */
+inline double rad2deg(double radians)
+{
+    return radians * 180.0 / M_PI;
+}
+
+inline double deg2rad(double degrees)
+{
+    return degrees * M_PI / 180.0;
+}
 
 struct smoothness_t{ 
     float value;
@@ -141,8 +153,8 @@ struct by_value{
 };
 
 /*
-    * A point cloud type that has 6D pose info ([x,y,z,roll,pitch,yaw] intensity is time stamp)
-    */
+ * A point cloud type that has 6D pose info ([x,y,z,roll,pitch,yaw] intensity is time stamp)
+ */
 struct PointXYZIRPYT
 {
     PCL_ADD_POINT4D

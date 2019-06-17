@@ -6,7 +6,7 @@
     <!-- Play Back rosbag -->
     <!-- Apollo -->
     <node pkg="rosbag" type="play" name="rosbagplay"
-          args="/home/mikezhu/1_Rosbag_Zoo/test1_converted.bag -r 1 --clock
+          args="/home/mikezhu/1_Rosbag_Zoo/test1_converted.bag --clock
           --topic /apollo/sensor/velodyne64/PointCloud2/std
   	      /apollo/sensor/velodyne64/PointCloud2/std:=/velodyne_points"/>
 
@@ -22,7 +22,7 @@
     <!--- LeGO-LOAM -->
     <node pkg="lego_loam" type="imageProjection"    name="imageProjection"    output="screen"/>
     <node pkg="lego_loam" type="featureAssociation" name="featureAssociation" output="screen"/>
-<!--    <node pkg="lego_loam" type="mapOptmization"     name="mapOptmization"     output="screen"/>-->
+    <node pkg="lego_loam" type="mapOptmization"     name="mapOptmization"     output="screen"/>
     <node pkg="lego_loam" type="transformFusion"    name="transformFusion"    output="screen"/>
 
 <!--    <node pkg="rosbag" type="record" name="recorder" output="screen"-->

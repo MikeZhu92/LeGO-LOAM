@@ -2,120 +2,119 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="lego_loam" targetName="transformFusion" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_eus" />
       <config projectName="lego_loam" targetName="nav_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_py" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="gmock_main" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_eus" />
       <config projectName="lego_loam" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="gtest" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_py" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_py" />
       <config projectName="lego_loam" targetName="roscpp_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tests" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="download_extra_data" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="gtest" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="clean_test_results" />
       <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="lego_loam" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="gmock" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="mapOptmization" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_py" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_py" />
-      <config projectName="lego_loam" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="run_tests" />
-      <config projectName="lego_loam" targetName="nodelet_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="nodelet_topic_tools_gencfg" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="doxygen" />
-      <config projectName="lego_loam" targetName="featureAssociation" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="imageProjection" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="_catkin_empty_exported_target" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="topic_tools_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="download_extra_data" />
-      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="actionlib_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="pcl_ros_gencfg" />
-      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_cpp" />
       <config projectName="lego_loam" targetName="gtest_main" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_lisp" />
       <config projectName="lego_loam" targetName="roscpp_generate_messages_py" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="clean_test_results" />
-      <config projectName="lego_loam" targetName="tf_generate_messages_eus" />
-      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="lego_loam" targetName="bond_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_lisp" />
-      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_cpp" />
-      <config projectName="lego_loam" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_eus" />
       <config projectName="lego_loam" targetName="tf_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="pcl_ros_gencfg" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="nodelet_topic_tools_gencfg" />
+      <config projectName="lego_loam" targetName="tf_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="gmock_main" />
+      <config projectName="lego_loam" targetName="doxygen" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_py" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="pcl_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="lego_loam" targetName="std_srvs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_py" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="topic_tools_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="imageProjection" />
+      <config projectName="lego_loam" targetName="gmock" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="bond_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="mapOptmization" />
+      <config projectName="lego_loam" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="transformFusion" />
+      <config projectName="lego_loam" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="run_tests" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="nodelet_generate_messages_eus" />
+      <config projectName="lego_loam" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="lego_loam" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="lego_loam" targetName="cloud_msgs_generate_messages_nodejs" />
+      <config projectName="lego_loam" targetName="featureAssociation" />
+      <config projectName="lego_loam" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="lego_loam" targetName="_catkin_empty_exported_target" />
+      <config projectName="lego_loam" targetName="tests" />
+      <config projectName="lego_loam" targetName="tf2_msgs_generate_messages_nodejs" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH=~/catkin_tool_ws/devel" GENERATION_DIR="$PROJECT_DIR$/../../../build" BUILD_OPTIONS="-j 8" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH=~/catkin_tool_ws/devel" GENERATION_DIR="$PROJECT_DIR$/../../../build" BUILD_OPTIONS="-j 8" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e638824e-9952-44e3-abd6-6ac53fd6067b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/launch/run_june11.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch/run_apollo.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/run_apollo.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mapOptmization.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mapOptmization.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -129,14 +128,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/imageProjection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="87" column="90" selection-start-line="87" selection-start-column="90" selection-end-line="87" selection-end-column="90" />
+            <state relative-caret-position="840">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#1666#1686#0" expanded="true" />
               </folding>
@@ -145,10 +144,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/featureAssociation.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="924" column="82" selection-start-line="924" selection-start-column="82" selection-end-line="924" selection-end-column="82" />
+            <state relative-caret-position="12684">
+              <caret line="1057" column="40" selection-start-line="1057" selection-start-column="40" selection-end-line="1057" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -156,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/utility.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+            <state relative-caret-position="756">
+              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding>
                 <element signature="e#71#91#0" expanded="true" />
               </folding>
@@ -165,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mapOptmization.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="713" column="56" lean-forward="true" selection-start-line="713" selection-start-column="56" selection-end-line="713" selection-end-column="56" />
+            <state relative-caret-position="9804">
+              <caret line="817" selection-start-line="817" selection-end-line="817" />
               <folding>
                 <element signature="e#2120#2140#0" expanded="true" />
               </folding>
@@ -178,10 +186,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/boost/smart_ptr/shared_ptr.hpp">
+        <entry file="file://$PROJECT_DIR$/src/transformFusion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="645" column="76" selection-start-line="645" selection-start-column="76" selection-end-line="645" selection-end-column="76" />
+            <state relative-caret-position="2184">
+              <caret line="182" selection-start-line="182" selection-end-line="182" />
             </state>
           </provider>
         </entry>
@@ -189,40 +197,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/launch/run_apollo.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="384">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/5/thread">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/launch/run_june11.launch">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/run_kitti.launch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/run.launch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="52">
+              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -239,7 +236,14 @@
       <find>publishGlobalMap</find>
       <find>globalMapKeyFramesDS</find>
       <find>latestGlobalMapKeyFramesDS</find>
+      <find>~</find>
+      <find>atan2</find>
+      <find>sqrt</find>
     </findStrings>
+    <replaceStrings>
+      <replace>std::atan2</replace>
+      <replace>std::sqrt</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -250,12 +254,15 @@
         <option value="$PROJECT_DIR$/launch/rosbag_play.launch" />
         <option value="$PROJECT_DIR$/launch/run_kitti.launch" />
         <option value="$PROJECT_DIR$/launch/run.launch" />
-        <option value="$PROJECT_DIR$/src/imageProjection.cpp" />
-        <option value="$PROJECT_DIR$/src/featureAssociation.cpp" />
         <option value="$PROJECT_DIR$/launch/run_apollo_no_rotation.launch" />
-        <option value="$PROJECT_DIR$/include/utility.h" />
+        <option value="$PROJECT_DIR$/src/transformFusion.cpp" />
         <option value="$PROJECT_DIR$/launch/run_apollo.launch" />
+        <option value="$PROJECT_DIR$/src/featureAssociation.cpp" />
+        <option value="$PROJECT_DIR$/src/imageProjection.cpp" />
+        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/mapOptmization.cpp" />
+        <option value="$PROJECT_DIR$/include/utility.h" />
+        <option value="$PROJECT_DIR$/launch/run_june11.launch" />
       </list>
     </option>
   </component>
@@ -288,19 +295,7 @@
               <item name="lego_loam" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeGO-LOAM" type="47feb1d3:ProjectViewModuleNode" />
               <item name="LeGO-LOAM" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lego_loam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeGO-LOAM" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="LeGO-LOAM" type="462c0819:PsiDirectoryNode" />
               <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lego_loam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeGO-LOAM" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="LeGO-LOAM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,7 +311,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/launch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -336,512 +331,512 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.mapOptmization">
-    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
+    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bond_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="bond_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bond_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="bond_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bond_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="bond_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bond_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="bond_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bond_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="bond_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="bond_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="clean_test_results" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="cloud_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="cloud_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="cloud_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="cloud_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cloud_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="cloud_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="cloud_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="download_extra_data" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="doxygen" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_gencfg" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_gencfg" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="featureAssociation" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="featureAssociation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="featureAssociation">
+    <configuration name="featureAssociation" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="featureAssociation" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="featureAssociation">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gmock" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gmock_main" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gtest" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="gtest_main" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="imageProjection" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="imageProjection" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="imageProjection">
+    <configuration name="imageProjection" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="imageProjection" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="imageProjection">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapOptmization" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="mapOptmization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="mapOptmization">
+    <configuration name="mapOptmization" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="mapOptmization" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="mapOptmization">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="nav_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="nav_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="nav_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="nav_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nav_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="nav_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nav_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="nodelet_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="nodelet_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="nodelet_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="nodelet_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="nodelet_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nodelet_topic_tools_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_topic_tools_gencfg" CONFIG_NAME="Debug">
+    <configuration name="nodelet_topic_tools_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="nodelet_topic_tools_gencfg" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="pcl_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="pcl_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="pcl_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="pcl_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="pcl_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pcl_ros_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_ros_gencfg" CONFIG_NAME="Debug">
+    <configuration name="pcl_ros_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="pcl_ros_gencfg" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="run_tests" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_srvs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="std_srvs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_srvs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="std_srvs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_srvs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="std_srvs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_srvs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="std_srvs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="std_srvs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="std_srvs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="std_srvs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tests" CONFIG_NAME="Debug">
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tests" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic_tools_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_cpp" CONFIG_NAME="Debug">
+    <configuration name="topic_tools_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_cpp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic_tools_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_eus" CONFIG_NAME="Debug">
+    <configuration name="topic_tools_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_eus" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic_tools_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_lisp" CONFIG_NAME="Debug">
+    <configuration name="topic_tools_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_lisp" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic_tools_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_nodejs" CONFIG_NAME="Debug">
+    <configuration name="topic_tools_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_nodejs" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic_tools_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_py" CONFIG_NAME="Debug">
+    <configuration name="topic_tools_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="topic_tools_generate_messages_py" CONFIG_NAME="Release">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transformFusion" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="transformFusion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="transformFusion">
+    <configuration name="transformFusion" type="CMakeRunConfiguration" factoryName="Application" folderName="lego_loam" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lego_loam" TARGET_NAME="transformFusion" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="lego_loam" RUN_TARGET_NAME="transformFusion">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -980,11 +975,17 @@
       <workItem from="1559832045971" duration="16964000" />
       <workItem from="1559918573099" duration="7933000" />
       <workItem from="1560178180092" duration="8039000" />
+      <workItem from="1560785431509" duration="14616000" />
+      <workItem from="1560868751571" duration="6362000" />
+      <workItem from="1560948086996" duration="1981000" />
+      <workItem from="1560955019380" duration="3384000" />
+      <workItem from="1560969155998" duration="1441000" />
+      <workItem from="1561079456829" duration="437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44493000" />
+    <option name="totallyTimeSpent" value="72714000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1001,25 +1002,25 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49794802" weight="0.17757009" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Structure" order="2" sideWeight="0.502052" visible="true" weight="0.19351292" />
+      <window_info id="Structure" order="2" sideWeight="0.502052" visible="true" weight="0.1351943" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.524464" weight="0.27301255" />
-      <window_info anchor="bottom" id="CMake" order="3" sideWeight="0.52226496" weight="0.39853558" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49917537" weight="0.3294979" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.5975811" weight="0.3294979" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.51236945" weight="0.30857742" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4024189" side_tool="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.5002749" side_tool="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.63276523" side_tool="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Version Control" order="13" side_tool="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.47498626" visible="true" weight="0.30230126" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49917537" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.5975811" weight="0.3294979" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.51236945" weight="0.30857742" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.52501374" side_tool="true" visible="true" weight="0.30287474" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52501374" side_tool="true" weight="0.27301255" />
+      <window_info anchor="bottom" id="Version Control" order="11" side_tool="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.52501374" weight="0.2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="TODO" order="4" sideWeight="0.52501374" weight="0.18031886" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1031,24 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/5/include/float.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../devel/.private/cloud_msgs/include/cloud_msgs/cloud_info.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#159#176#0" expanded="true" />
-            <element signature="e#404#430#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,55 +1056,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/launch/run_apollo_no_rotation.launch" />
+    <entry file="file:///usr/include/x86_64-linux-gnu/bits/mathcalls.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transformFusion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/run_kitti.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/run.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/run_apollo_no_rotation.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/imageProjection.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="87" column="90" selection-start-line="87" selection-start-column="90" selection-end-line="87" selection-end-column="90" />
-          <folding>
-            <element signature="e#1666#1686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/featureAssociation.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="924" column="82" selection-start-line="924" selection-start-column="82" selection-end-line="924" selection-end-column="82" />
+        <state relative-caret-position="309">
+          <caret line="318" column="50" selection-start-line="318" selection-start-column="50" selection-end-line="318" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1132,23 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/utility.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="e#71#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch/run_apollo.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/thread">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1156,13 +1078,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/ros/kinetic/include/ros/node_handle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="163" column="5" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="487" column="6" selection-start-line="487" selection-start-column="6" selection-end-line="487" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/5/include/float.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pcl-1.7/pcl/filters/filter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../devel/.private/cloud_msgs/include/cloud_msgs/cloud_info.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="e#159#176#0" expanded="true" />
+            <element signature="e#404#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="193" column="13" lean-forward="true" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run_kitti.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/limits">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="1641" column="6" selection-start-line="1641" selection-start-column="6" selection-end-line="1641" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imageProjection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#1666#1686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/featureAssociation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12684">
+          <caret line="1057" column="40" selection-start-line="1057" selection-start-column="40" selection-end-line="1057" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/utility.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="e#71#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mapOptmization.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="713" column="56" lean-forward="true" selection-start-line="713" selection-start-column="56" selection-end-line="713" selection-end-column="56" />
+        <state relative-caret-position="9804">
+          <caret line="817" selection-start-line="817" selection-end-line="817" />
           <folding>
             <element signature="e#2120#2140#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transformFusion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run_apollo.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/run_june11.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
