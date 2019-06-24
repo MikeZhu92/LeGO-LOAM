@@ -260,7 +260,7 @@ public:
 
             index = columnIdn + rowIdn * Horizon_SCAN;
             fullCloud->points[index] = thisPoint;
-
+            fullInfoCloud->points[index] = thisPoint;
             fullInfoCloud->points[index].intensity = range;
             // the corresponding range of a point is saved as "intensity"
         }
