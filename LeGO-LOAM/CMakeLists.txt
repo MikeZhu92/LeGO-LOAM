@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   cv_bridge
   image_transport
+  eigen_conversions
 
   pcl_ros
   pcl_conversions
@@ -23,6 +24,9 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(GTSAM REQUIRED QUIET)
 find_package(PCL REQUIRED QUIET)
 find_package(OpenCV REQUIRED QUIET)
+
+find_package(PkgConfig)
+pkg_search_module(Eigen3 REQUIRED eigen3)
 
 catkin_package(
   INCLUDE_DIRS include
@@ -44,6 +48,10 @@ link_directories(
 	${PCL_LIBRARY_DIRS}
 	${GTSAM_LIBRARY_DIRS}
 )
+
+add_executable(transformCoordinate src/transform2utm.cpp)
+add_dependencies(transformCoordinate ${catkin_EXPORTED_TARGETS})
+target_link_libraries(transformCoordinate ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
 
 add_executable(imageProjection src/imageProjection.cpp)
 add_dependencies(imageProjection ${catkin_EXPORTED_TARGETS} cloud_msgs_gencpp)
