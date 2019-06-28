@@ -63,7 +63,6 @@ private:
     cv::Mat rangeMat;  // range matrix for range image
     cv::Mat labelMat;  // label matrix for segmentaiton marking
     cv::Mat groundMat; // ground matrix for ground cloud marking
-    cv::Mat testMat;   // test matrix by mk
     int labelCount;
 
     float startOrientation;
@@ -152,7 +151,6 @@ public:
         rangeMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32F, cv::Scalar::all(FLT_MAX));
         groundMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8S, cv::Scalar::all(0));
         labelMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32S, cv::Scalar::all(0));
-        testMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8U, cv::Scalar(0));  //mk
         labelCount = 1;
 
         std::fill(fullCloud->points.begin(), fullCloud->points.end(), nanPoint);
@@ -165,7 +163,38 @@ public:
     {
         cloudHeader = laserCloudMsg->header;
         // cloudHeader.stamp = ros::Time::now(); // Ouster lidar users may need to uncomment this line
+#ifdef useApollo
+        pcl::PointCloud<ApolloPoint>::Ptr apolloCloudIn(new pcl::PointCloud<ApolloPoint>);
+        pcl::fromROSMsg(*laserCloudMsg, *apolloCloudIn);
+        laserCloudIn->width = apolloCloudIn->width;
+        laserCloudIn->height = apolloCloudIn->height;
+        laserCloudIn->points.resize(laserCloudIn->width * laserCloudIn->height);
+        //laserCloudIn->is_dense = apolloCloudIn->is_dense;
+        if (apolloCloudIn->height == 1 || apolloCloudIn->width ==  1) {
+            laserCloudIn->is_dense = true;
+            for (unsigned int i = 0; i < apolloCloudIn->size(); ++i) {
+                PointType &p = laserCloudIn->points[i];
+                p.x = apolloCloudIn->points[i].x;
+                p.y = apolloCloudIn->points[i].y;
+                p.z = apolloCloudIn->points[i].z;
+                p.intensity = static_cast<float>(apolloCloudIn->points[i].intensity);
+            }
+        }
+        else {
+            laserCloudIn->is_dense = false;
+            for (unsigned int h = 0; h < apolloCloudIn->height; ++h) {
+                for (unsigned int w = 0; w < apolloCloudIn->width; ++w) {
+                    PointType &p = laserCloudIn->at(w, h);
+                    p.x = apolloCloudIn->at(w, h).x;
+                    p.y = apolloCloudIn->at(w, h).y;
+                    p.z = apolloCloudIn->at(w, h).z;
+                    p.intensity = static_cast<float>(apolloCloudIn->at(w, h).intensity);
+                }
+            }
+        }
+#else
         pcl::fromROSMsg(*laserCloudMsg, *laserCloudIn);
+#endif
         // Remove Nan points
         std::vector<int> indices;
         pcl::removeNaNFromPointCloud(*laserCloudIn, *laserCloudIn, indices);
@@ -179,11 +208,10 @@ public:
         findStartEndAngle();
         // 3. Range image projection
         projectPointCloud();
+//        projectOrgPcl();
+//        projectOrgPointCloud();
         // 4. Mark ground points
         groundRemoval();
-        // mk for visualization
-//        cv::imshow("rangeMat", testMat);
-//        cvWaitKey(5);
         // 5. Point cloud segmentation
         cloudSegmentation();
         // 6. Publish all clouds
@@ -227,12 +255,13 @@ public:
             thisPoint.y = laserCloudIn->points[i].y;
             thisPoint.z = laserCloudIn->points[i].z;
 
-            if (std::isnan(thisPoint.x) || std::isnan(thisPoint.y) ||
-                std::isnan(thisPoint.z)) {
-                continue;  // avoid invalid point
-            }
+//            if (!pcl::isFinite(laserCloudIn->points[i])) {
+//                continue;
+//            }
+
+            float xyDis = thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y;
             // find the row and column index in the iamge for this point
-            verticalAngle = rad2deg(std::atan2(thisPoint.z, std::sqrt(thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y)));
+            verticalAngle = rad2deg(std::atan2(thisPoint.z, std::sqrt(xyDis)));
 
             rowIdn = std::round((verticalAngle + ang_bottom) / ang_res_y);
             // so the depth img will be flipped since the range is from + to -
@@ -240,16 +269,13 @@ public:
                 continue;
 
             horizonAngle = rad2deg(std::atan2(thisPoint.x, thisPoint.y));
-
             columnIdn = -std::round((horizonAngle - 90.0) / ang_res_x) + Horizon_SCAN / 2;
             if (columnIdn >= Horizon_SCAN)
                 columnIdn -= Horizon_SCAN;
-
             if (columnIdn < 0 || columnIdn >= Horizon_SCAN)
                 continue;
 
-            range = std::sqrt(thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y + thisPoint.z * thisPoint.z);
-
+            range = std::sqrt(xyDis + thisPoint.z * thisPoint.z);
             if (range < 0.5) {  // original value is 0.1
                 continue;
             }
@@ -264,6 +290,92 @@ public:
             fullInfoCloud->points[index].intensity = range;
             // the corresponding range of a point is saved as "intensity"
         }
+    }
+
+    void projectOrgPcl()
+    {
+        const int img_height = laserCloudIn->width; // 64
+        const int img_width = laserCloudIn->height; // 2088
+        cv::Mat intensity_img(img_height, img_width, CV_8U, cv::Scalar(0));
+        for (unsigned int h = 0; h < laserCloudIn->height; ++h) {
+            for (unsigned int w = 0; w < laserCloudIn->width; ++w) {
+                if (!pcl::isFinite(laserCloudIn->at(w, h))) {
+                    continue;  // avoid invalid point
+                }
+                if (w <= 0 || w > 64)
+                    continue;
+
+                int intensity = static_cast<int>(laserCloudIn->at(w, h).intensity);
+                intensity_img.at<int>(64 - w, h, 0) = intensity;
+            }
+        }
+//        cv::imshow("rangeMat", intensity_img);
+//        cvWaitKey(5);
+    }
+
+    void projectOrgPointCloud()
+    {
+        // range image projection
+        float verticalAngle, horizonAngle, range;
+        size_t rowIdn, columnIdn, index;
+
+
+        cv::Mat testMat(N_SCAN, Horizon_SCAN, CV_8U, cv::Scalar(0));   // test matrix by mk
+        const int img_height = laserCloudIn->width; // 64
+        const int img_width = laserCloudIn->height; // 2088
+        cv::Mat intensity_img(img_height, img_width, CV_8U, cv::Scalar(0));
+
+        for (unsigned int h = 0; h < laserCloudIn->height; ++h) {
+            for (unsigned int w = 0; w < laserCloudIn->width; ++w) {
+                if (!pcl::isFinite(laserCloudIn->at(w, h))) {
+                    continue;
+                }
+
+                PointType thisPoint;
+                thisPoint.x = laserCloudIn->at(w, h).x;
+                thisPoint.y = laserCloudIn->at(w, h).y;
+                thisPoint.z = laserCloudIn->at(w, h).z;
+
+                int intensity = static_cast<int>(laserCloudIn->at(w, h).intensity);
+                intensity_img.at<int>(w, h, 0) = intensity;
+
+                float xyDis = thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y;
+                // find the row and column index in the iamge for this point
+                verticalAngle = rad2deg(std::atan2(thisPoint.z, std::sqrt(xyDis)));
+
+                rowIdn = std::round((verticalAngle + ang_bottom) / ang_res_y);
+                // so the depth img will be flipped since the range is from + to -
+                if (rowIdn < 0 || rowIdn >= N_SCAN)
+                    continue;
+
+                horizonAngle = rad2deg(std::atan2(thisPoint.x, thisPoint.y));
+                columnIdn = -std::round((horizonAngle - 90.0) / ang_res_x) + Horizon_SCAN / 2;
+                if (columnIdn >= Horizon_SCAN)
+                    columnIdn -= Horizon_SCAN;
+                if (columnIdn < 0 || columnIdn >= Horizon_SCAN)
+                    continue;
+
+                range = std::sqrt(xyDis + thisPoint.z * thisPoint.z);
+                if (range < 0.5) {  // original value is 0.1
+                    continue;
+                }
+
+                rangeMat.at<float>(rowIdn, columnIdn) = range;
+
+                if (testMat.at<int>(rowIdn, columnIdn, 0) == 0)
+                    testMat.at<int>(rowIdn, columnIdn, 0) = intensity;
+
+                thisPoint.intensity = (float) rowIdn + (float) columnIdn / 10000.0;
+
+                index = columnIdn + rowIdn * Horizon_SCAN;
+                fullCloud->points[index] = thisPoint;
+                fullInfoCloud->points[index] = thisPoint;
+                fullInfoCloud->points[index].intensity = range;
+                // the corresponding range of a point is saved as "intensity"
+            }
+        }
+        cv::imshow("rangeMat", testMat);
+        cvWaitKey(5);
     }
 
     void groundRemoval()

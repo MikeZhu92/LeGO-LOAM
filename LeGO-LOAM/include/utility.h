@@ -43,7 +43,9 @@
 #include <thread>
 #include <mutex>
 
-#define PI 3.14159265
+//#define PI 3.14159265
+
+#define useApollo  // uncomment this line for apollo
 
 using namespace std;
 
@@ -63,8 +65,9 @@ extern const string fileDirectory = "/tmp/";
 
 // HDL-64
 extern const int N_SCAN = 64;
-extern const int Horizon_SCAN = 1800;
-extern const float ang_res_x = 0.2;
+extern const int Horizon_SCAN = 2083;  // 1800
+extern const float ang_res_x = 0.1728;
+//extern const float ang_res_x = 0.2;  // given
 extern const float ang_res_y = 0.427;
 extern const float ang_bottom = 24.9;
 extern const int groundScanInd = 50;
@@ -174,5 +177,29 @@ POINT_CLOUD_REGISTER_POINT_STRUCT (PointXYZIRPYT,
 )
 
 typedef PointXYZIRPYT  PointTypePose;
+
+/*
+ * Apollo pointcloud type
+ */
+namespace apollo {
+struct PointXYZIT
+{
+    float x;
+    float y;
+    float z;
+    unsigned char intensity;
+    double timestamp;
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW  // make sure our new allocators are aligned
+} EIGEN_ALIGN16;  // enforce SSE padding for correct memory alignment
+}  // namespace apollo
+
+POINT_CLOUD_REGISTER_POINT_STRUCT (apollo::PointXYZIT,
+                                  (float, x, x) (float, y, y)
+                                  (float, z, z)
+                                  (uint8_t, intensity, intensity)
+                                  (double, timestamp, timestamp)
+)
+
+typedef apollo::PointXYZIT ApolloPoint;
 
 #endif
