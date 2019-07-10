@@ -63,8 +63,10 @@ private:
     cv::Mat rangeMat;  // range matrix for range image
     cv::Mat labelMat;  // label matrix for segmentaiton marking
     cv::Mat groundMat; // ground matrix for ground cloud marking
-    int labelCount;
+    cv::Mat debugMat;  // debug matrix mk
 
+    int labelCount;
+    bool isOrganized;  // organized pcl or not
     float startOrientation;
     float endOrientation;
 
@@ -83,7 +85,8 @@ private:
     uint16_t *queueIndY;
 
 public:
-    ImageProjection() : nh("~")
+    ImageProjection()
+    : nh("~"), isOrganized(false)
     {
         subLaserCloud = nh.subscribe<sensor_msgs::PointCloud2>(
             pointCloudTopic, 1, &ImageProjection::cloudHandler, this);
@@ -151,6 +154,7 @@ public:
         rangeMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32F, cv::Scalar::all(FLT_MAX));
         groundMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8S, cv::Scalar::all(0));
         labelMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_32S, cv::Scalar::all(0));
+        debugMat = cv::Mat(N_SCAN, Horizon_SCAN, CV_8UC3, cv::Scalar::all(0));  // mk
         labelCount = 1;
 
         std::fill(fullCloud->points.begin(), fullCloud->points.end(), nanPoint);
@@ -159,45 +163,83 @@ public:
 
     ~ImageProjection(){}
 
+private:
+
     void copyPointCloud(const sensor_msgs::PointCloud2ConstPtr &laserCloudMsg)
     {
         cloudHeader = laserCloudMsg->header;
-        // cloudHeader.stamp = ros::Time::now(); // Ouster lidar users may need to uncomment this line
-#ifdef useApollo
-        pcl::PointCloud<ApolloPoint>::Ptr apolloCloudIn(new pcl::PointCloud<ApolloPoint>);
-        pcl::fromROSMsg(*laserCloudMsg, *apolloCloudIn);
-        laserCloudIn->width = apolloCloudIn->width;
-        laserCloudIn->height = apolloCloudIn->height;
-        laserCloudIn->points.resize(laserCloudIn->width * laserCloudIn->height);
-        //laserCloudIn->is_dense = apolloCloudIn->is_dense;
-        if (apolloCloudIn->height == 1 || apolloCloudIn->width ==  1) {
-            laserCloudIn->is_dense = true;
-            for (unsigned int i = 0; i < apolloCloudIn->size(); ++i) {
-                PointType &p = laserCloudIn->points[i];
-                p.x = apolloCloudIn->points[i].x;
-                p.y = apolloCloudIn->points[i].y;
-                p.z = apolloCloudIn->points[i].z;
-                p.intensity = static_cast<float>(apolloCloudIn->points[i].intensity);
+        // cloudHeader.stamp = ros::Time::now();
+        // Ouster lidar users may need to uncomment the above line
+        if (useAPOLLO) {
+            pcl::PointCloud<ApolloPoint>::Ptr apolloCloudIn(new pcl::PointCloud<ApolloPoint>);
+            pcl::fromROSMsg(*laserCloudMsg, *apolloCloudIn);
+            laserCloudIn->width = apolloCloudIn->width;
+            laserCloudIn->height = apolloCloudIn->height;
+            laserCloudIn->points.resize(laserCloudIn->width * laserCloudIn->height);
+            //laserCloudIn->is_dense = apolloCloudIn->is_dense;
+            if (apolloCloudIn->height == 1 || apolloCloudIn->width ==  1) {
+                laserCloudIn->is_dense = true;
+                for (unsigned int i = 0; i < apolloCloudIn->size(); ++i) {
+                    PointType &p = laserCloudIn->points[i];
+                    p.x = apolloCloudIn->points[i].x;
+                    p.y = apolloCloudIn->points[i].y;
+                    p.z = apolloCloudIn->points[i].z;
+                    p.intensity = static_cast<float>(apolloCloudIn->points[i].intensity);
+                }
             }
-        }
-        else {
-            laserCloudIn->is_dense = false;
-            for (unsigned int h = 0; h < apolloCloudIn->height; ++h) {
-                for (unsigned int w = 0; w < apolloCloudIn->width; ++w) {
-                    PointType &p = laserCloudIn->at(w, h);
-                    p.x = apolloCloudIn->at(w, h).x;
-                    p.y = apolloCloudIn->at(w, h).y;
-                    p.z = apolloCloudIn->at(w, h).z;
-                    p.intensity = static_cast<float>(apolloCloudIn->at(w, h).intensity);
+            else {
+                isOrganized = true;
+                laserCloudIn->is_dense = false;
+                for (unsigned int h = 0; h < apolloCloudIn->height; ++h) {
+                    for (unsigned int w = 0; w < apolloCloudIn->width; ++w) {
+                        PointType &p = laserCloudIn->at(w, h);
+                        p.x = apolloCloudIn->at(w, h).x;
+                        p.y = apolloCloudIn->at(w, h).y;
+                        p.z = apolloCloudIn->at(w, h).z;
+                        p.intensity = static_cast<float>(apolloCloudIn->at(w, h).intensity);
+                    }
                 }
             }
         }
-#else
-        pcl::fromROSMsg(*laserCloudMsg, *laserCloudIn);
-#endif
-        // Remove Nan points
-        std::vector<int> indices;
-        pcl::removeNaNFromPointCloud(*laserCloudIn, *laserCloudIn, indices);
+        else {
+            pcl::fromROSMsg(*laserCloudMsg, *laserCloudIn);
+            // Remove Nan points
+            std::vector<int> indices;
+            pcl::removeNaNFromPointCloud(*laserCloudIn, *laserCloudIn, indices);
+        }
+    }
+
+    void findStartEndAngle()
+    {
+        size_t start_idx = 0;
+        size_t end_idx = laserCloudIn->points.size() - 1;
+        if (isOrganized) {
+            while (!pcl::isFinite(laserCloudIn->points[start_idx])) {
+                ++start_idx;
+            }
+            while (!pcl::isFinite(laserCloudIn->points[end_idx]) && end_idx > 0) {
+                --end_idx;
+            }
+        }
+        // start and end orientation of this cloud
+        // atan2 is [-pi, pi]
+        segMsg.startOrientation = -std::atan2(laserCloudIn->points[start_idx].y,
+                                              laserCloudIn->points[start_idx].x);
+
+        segMsg.endOrientation = -std::atan2(laserCloudIn->points[end_idx].y,
+                                            laserCloudIn->points[end_idx].x) + 2 * M_PI;
+
+        if (segMsg.endOrientation - segMsg.startOrientation > 3 * M_PI) {
+            segMsg.endOrientation -= 2 * M_PI;
+        }
+        else if (segMsg.endOrientation - segMsg.startOrientation < M_PI) {
+            segMsg.endOrientation += 2 * M_PI;
+        }
+
+        segMsg.orientationDiff = segMsg.endOrientation - segMsg.startOrientation;
+        //ROS_INFO_STREAM("Start Orientation is " << segMsg.startOrientation);  // around 1.36868
+        //ROS_INFO_STREAM("End Orientation is " << segMsg.endOrientation);      // around 7.6323
+        //ROS_INFO_STREAM("Diff is " << segMsg.orientationDiff);                // around 6.28
     }
 
     void cloudHandler(const sensor_msgs::PointCloud2ConstPtr &laserCloudMsg)
@@ -207,9 +249,12 @@ public:
         // 2. Start and end angle of a scan
         findStartEndAngle();
         // 3. Range image projection
-        projectPointCloud();
-//        projectOrgPcl();
-//        projectOrgPointCloud();
+        if (useAPOLLO && isOrganized) {
+            projectApolloOrgPointCloud();
+            //projectOrgPointCloudDebug();
+        } else {
+            projectPointCloud();
+        }
         // 4. Mark ground points
         groundRemoval();
         // 5. Point cloud segmentation
@@ -220,124 +265,111 @@ public:
         resetParameters();
     }
 
-    void findStartEndAngle()
-    {
-        // start and end orientation of this cloud
-        // atan2 is [-pi, pi]
-        segMsg.startOrientation = -std::atan2(laserCloudIn->points[0].y,
-                                              laserCloudIn->points[0].x);
-        segMsg.endOrientation = -std::atan2(laserCloudIn->points[laserCloudIn->points.size() - 1].y,
-                                            laserCloudIn->points[laserCloudIn->points.size() - 1].x) + 2 * M_PI;
-        // original ver:
-        //segMsg.endOrientation = -std::atan2(laserCloudIn->points[laserCloudIn->points.size() - 1].y,
-        //                                    laserCloudIn->points[laserCloudIn->points.size() - 2].x) + 2 * M_PI;
-        if (segMsg.endOrientation - segMsg.startOrientation > 3 * M_PI) {
-            segMsg.endOrientation -= 2 * M_PI;
-        }
-        else if (segMsg.endOrientation - segMsg.startOrientation < M_PI) {
-            segMsg.endOrientation += 2 * M_PI;
-        }
-        segMsg.orientationDiff = segMsg.endOrientation - segMsg.startOrientation;
-        //ROS_INFO_STREAM("Diff is " << segMsg.orientationDiff);  // around 6.28
-    }
-
     void projectPointCloud()
     {
         // range image projection
-        float verticalAngle, horizonAngle, range;
-        size_t rowIdn, columnIdn, index, cloudSize;
-        PointType thisPoint;
-
-        cloudSize = laserCloudIn->points.size();
+        const size_t cloudSize = laserCloudIn->points.size();
+        size_t rowIdn = 0, columnIdn = 0, index = 0;
+        float verticalAngle = 0, horizonAngle = 0, xyDis = 0, range = 0;
 
         for (size_t i = 0; i < cloudSize; ++i) {
-            thisPoint.x = laserCloudIn->points[i].x;
-            thisPoint.y = laserCloudIn->points[i].y;
-            thisPoint.z = laserCloudIn->points[i].z;
-
-//            if (!pcl::isFinite(laserCloudIn->points[i])) {
-//                continue;
-//            }
-
-            float xyDis = thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y;
+            const PointType& pclPoint = laserCloudIn->points[i];
+            // range filter
+            xyDis = pclPoint.x * pclPoint.x + pclPoint.y * pclPoint.y;
+            range = std::sqrt(xyDis + pclPoint.z * pclPoint.z);
+            if (range < 0.5) {  // original value is 0.1
+                continue;
+            }
             // find the row and column index in the iamge for this point
-            verticalAngle = rad2deg(std::atan2(thisPoint.z, std::sqrt(xyDis)));
-
+            verticalAngle = rad2deg(std::atan2(pclPoint.z, std::sqrt(xyDis)));
             rowIdn = std::round((verticalAngle + ang_bottom) / ang_res_y);
             // so the depth img will be flipped since the range is from + to -
             if (rowIdn < 0 || rowIdn >= N_SCAN)
                 continue;
 
-            horizonAngle = rad2deg(std::atan2(thisPoint.x, thisPoint.y));
+            horizonAngle = rad2deg(std::atan2(pclPoint.x, pclPoint.y));
             columnIdn = -std::round((horizonAngle - 90.0) / ang_res_x) + Horizon_SCAN / 2;
             if (columnIdn >= Horizon_SCAN)
                 columnIdn -= Horizon_SCAN;
             if (columnIdn < 0 || columnIdn >= Horizon_SCAN)
                 continue;
 
-            range = std::sqrt(xyDis + thisPoint.z * thisPoint.z);
-            if (range < 0.5) {  // original value is 0.1
-                continue;
-            }
-
             rangeMat.at<float>(rowIdn, columnIdn) = range;
-
-            thisPoint.intensity = (float) rowIdn + (float) columnIdn / 10000.0;
+            cv::Vec3b& color = debugMat.at<cv::Vec3b>(rowIdn, columnIdn);
+            color.val[0] = color.val[1] = color.val[2] = (uchar)pclPoint.intensity;
 
             index = columnIdn + rowIdn * Horizon_SCAN;
-            fullCloud->points[index] = thisPoint;
-            fullInfoCloud->points[index] = thisPoint;
+            PointType& fullPoint = fullCloud->points[index];
+            fullPoint = pclPoint;
+            fullPoint.intensity = (float) rowIdn + (float) columnIdn / 10000.0;
+            fullInfoCloud->points[index] = fullPoint;
             fullInfoCloud->points[index].intensity = range;
             // the corresponding range of a point is saved as "intensity"
         }
     }
 
-    void projectOrgPcl()
+    void projectApolloOrgPointCloud()
     {
-        const int img_height = laserCloudIn->width; // 64
-        const int img_width = laserCloudIn->height; // 2088
-        cv::Mat intensity_img(img_height, img_width, CV_8U, cv::Scalar(0));
-        for (unsigned int h = 0; h < laserCloudIn->height; ++h) {
-            for (unsigned int w = 0; w < laserCloudIn->width; ++w) {
+        // range image projection
+        const size_t cloudSize = laserCloudIn->points.size();
+        float horizonAngle = .0, range = .0;
+        size_t columnIdn = 0, index = 0;
+        for (size_t h = 0; h < laserCloudIn->height; ++h) {   //2088
+            for (size_t w = 0; w < laserCloudIn->width; ++w) {  //64
                 if (!pcl::isFinite(laserCloudIn->at(w, h))) {
-                    continue;  // avoid invalid point
+                    continue;
                 }
-                if (w <= 0 || w > 64)
+                const PointType& pclPoint = laserCloudIn->at(w, h);
+                // compute range
+                range = std::sqrt(pclPoint.x * pclPoint.x +
+                                  pclPoint.y * pclPoint.y +
+                                  pclPoint.z * pclPoint.z);
+                if (range < 0.5) {  // original value is 0.1
+                    continue;
+                }
+                // find the row and column index in the iamge for this point
+                horizonAngle = rad2deg(std::atan2(pclPoint.x, pclPoint.y));
+                columnIdn = -std::round((horizonAngle - 90.0) / ang_res_x) + Horizon_SCAN / 2;
+                if (columnIdn >= Horizon_SCAN)
+                    columnIdn -= Horizon_SCAN;
+                if (columnIdn < 0 || columnIdn >= Horizon_SCAN)
                     continue;
 
-                int intensity = static_cast<int>(laserCloudIn->at(w, h).intensity);
-                intensity_img.at<int>(64 - w, h, 0) = intensity;
+                rangeMat.at<float>(w, columnIdn) = range;
+                cv::Vec3b& color = debugMat.at<cv::Vec3b>(w, columnIdn);
+                color.val[0] = color.val[1] = color.val[2] = (uchar)pclPoint.intensity;
+
+                index = columnIdn + w * Horizon_SCAN;
+                PointType& fullPoint = fullCloud->points[index];
+
+                fullPoint.x = pclPoint.x;
+                fullPoint.y = pclPoint.y;
+                fullPoint.z = pclPoint.z;
+                fullPoint.intensity = (float) w + (float) columnIdn / 10000.0;
+
+                fullInfoCloud->points[index] = fullPoint;
+                fullInfoCloud->points[index].intensity = range;
+                // the corresponding range of a point is saved as "intensity"
             }
         }
-//        cv::imshow("rangeMat", intensity_img);
-//        cvWaitKey(5);
     }
 
-    void projectOrgPointCloud()
-    {
+#ifdef DEBUG
+    void projectUnorganizedPcl(cv::Mat& pclImg) {
         // range image projection
         float verticalAngle, horizonAngle, range;
         size_t rowIdn, columnIdn, index;
+        PointType thisPoint;
 
-
-        cv::Mat testMat(N_SCAN, Horizon_SCAN, CV_8U, cv::Scalar(0));   // test matrix by mk
-        const int img_height = laserCloudIn->width; // 64
-        const int img_width = laserCloudIn->height; // 2088
-        cv::Mat intensity_img(img_height, img_width, CV_8U, cv::Scalar(0));
-
-        for (unsigned int h = 0; h < laserCloudIn->height; ++h) {
-            for (unsigned int w = 0; w < laserCloudIn->width; ++w) {
+        size_t cloudSize = laserCloudIn->points.size();
+        for (size_t h = 0; h < laserCloudIn->height; ++h) {   //2088
+            for (size_t w = 0; w < laserCloudIn->width; ++w) {  //64
                 if (!pcl::isFinite(laserCloudIn->at(w, h))) {
                     continue;
                 }
-
-                PointType thisPoint;
                 thisPoint.x = laserCloudIn->at(w, h).x;
                 thisPoint.y = laserCloudIn->at(w, h).y;
                 thisPoint.z = laserCloudIn->at(w, h).z;
-
-                int intensity = static_cast<int>(laserCloudIn->at(w, h).intensity);
-                intensity_img.at<int>(w, h, 0) = intensity;
 
                 float xyDis = thisPoint.x * thisPoint.x + thisPoint.y * thisPoint.y;
                 // find the row and column index in the iamge for this point
@@ -360,23 +392,95 @@ public:
                     continue;
                 }
 
-                rangeMat.at<float>(rowIdn, columnIdn) = range;
+                pclImg.at<uchar>(w + 64, columnIdn, 0) = static_cast<uchar>(
+                    laserCloudIn->at(w, h).intensity);
 
-                if (testMat.at<int>(rowIdn, columnIdn, 0) == 0)
-                    testMat.at<int>(rowIdn, columnIdn, 0) = intensity;
+                pclImg.at<uchar>(rowIdn + 128, columnIdn, 0) = static_cast<uchar>(
+                    laserCloudIn->at(w, h).intensity);
+            }
+        }
+    }
 
-                thisPoint.intensity = (float) rowIdn + (float) columnIdn / 10000.0;
+    size_t computeStartCol() {
+        size_t start_colum_id = 0;
+        size_t start_idx = 0;
+        while (!pcl::isFinite(laserCloudIn->points[start_idx])) {
+            ++start_idx;
+        }
+        const PointType& thisPoint = laserCloudIn->points[start_idx];
+        float horizonAngle = rad2deg(std::atan2(thisPoint.x, thisPoint.y));
+        start_colum_id = -std::round((horizonAngle - 90.0) / ang_res_x) + Horizon_SCAN / 2;
+        if (start_colum_id >= Horizon_SCAN)
+            start_colum_id -= Horizon_SCAN;
+        return start_colum_id;
+    }
 
-                index = columnIdn + rowIdn * Horizon_SCAN;
+    void projectOrgPointCloudDebug()
+    {
+        // compute offset
+        size_t start_colum_id = computeStartCol();
+
+        // -1 invalid index
+        cv::Mat pclWidth(N_SCAN, Horizon_SCAN, cv::DataType<int>::type, cv::Scalar(-1));
+        cv::Mat pclHeight(N_SCAN, Horizon_SCAN, cv::DataType<int>::type, cv::Scalar(-1));
+        int flipShiftCol = 0;
+        for (size_t h = 0; h < laserCloudIn->height; ++h) {   //2088
+            for (size_t w = 0; w < laserCloudIn->width; ++w) {  //64
+                if (!pcl::isFinite(laserCloudIn->at(w, h))) {
+                    continue;
+                }
+                flipShiftCol = Horizon_SCAN - 1 - h; // fliped
+                flipShiftCol += start_colum_id;
+                if (flipShiftCol >= Horizon_SCAN)
+                    flipShiftCol -= Horizon_SCAN;    // shifted
+
+                pclWidth.at<int>(w, flipShiftCol, 0) = w;
+                pclHeight.at<int>(w,flipShiftCol, 0) = h;
+            }
+        }
+
+        size_t index = 0;
+        float range = 0;
+        PointType thisPoint;
+
+        cv::Mat pclImg(N_SCAN * 3, Horizon_SCAN, CV_8UC1, cv::Scalar(0));
+
+        for (size_t c = 0; c < Horizon_SCAN; ++c) {
+            for (size_t r = 0; r < N_SCAN; ++r) {
+                int w = pclWidth.at<int>(r, c, 0);
+                int h = pclHeight.at<int>(r, c, 0);
+                if (w == -1 || h == -1) {
+                    continue;
+                }
+                const PointType& pclPoint = laserCloudIn->at(w, h);
+                range = pclPoint.x*pclPoint.x + pclPoint.y*pclPoint.y +
+                        pclPoint.z*pclPoint.z;
+                if (range < 0.5) {
+                    continue;
+                }
+                rangeMat.at<float>(r, c) = range;
+                thisPoint.x = pclPoint.x;
+                thisPoint.y = pclPoint.y;
+                thisPoint.z = pclPoint.z;
+                thisPoint.intensity = float(r) + float(c) / 10000.0;
+                index = c + r * Horizon_SCAN;
                 fullCloud->points[index] = thisPoint;
                 fullInfoCloud->points[index] = thisPoint;
                 fullInfoCloud->points[index].intensity = range;
                 // the corresponding range of a point is saved as "intensity"
+
+                pclImg.at<uchar>(r, c, 0) = static_cast<uchar>(
+                    laserCloudIn->at(w, h).intensity);
             }
         }
-        cv::imshow("rangeMat", testMat);
+//        cv::Mat originalMat(N_SCAN, Horizon_SCAN, CV_8UC1, cv::Scalar(0));   // test matrix by mk
+//        cv::Mat currentMat(N_SCAN, Horizon_SCAN, CV_8UC1, cv::Scalar(0));   // test matrix by mk
+        projectUnorganizedPcl(pclImg);
+
+        cv::imshow("rangeMat", pclImg);
         cvWaitKey(5);
     }
+#endif
 
     void groundRemoval()
     {
@@ -402,9 +506,9 @@ public:
                 diffY = fullCloud->points[upperInd].y - fullCloud->points[lowerInd].y;
                 diffZ = fullCloud->points[upperInd].z - fullCloud->points[lowerInd].z;
 
-                angle = std::atan2(diffZ, std::sqrt(diffX * diffX + diffY * diffY)) * 180 / M_PI;
+                angle = rad2deg(std::atan2(diffZ, std::sqrt(diffX * diffX + diffY * diffY)));
 
-                if (abs(angle - sensorMountAngle) <= 10) {
+                if (abs(angle - sensorMountAngle) <= 5) {  // org is 10
                     groundMat.at<int8_t>(i, j) = 1;
                     groundMat.at<int8_t>(i + 1, j) = 1;
                 }
@@ -418,13 +522,25 @@ public:
                 if (groundMat.at<int8_t>(i, j) == 1 || rangeMat.at<float>(i, j) == FLT_MAX) {
                     labelMat.at<int>(i, j) = -1;
                 }
+                cv::Vec3b& color = debugMat.at<cv::Vec3b>(i, j);
+                if (groundMat.at<int8_t>(i, j) == 1) {
+                    color.val[0] = 0;
+                    color.val[1] = (uchar)255;
+                    color.val[2] = 0;
+                }
+                else if (rangeMat.at<float>(i, j) == FLT_MAX) {
+                    color.val[0] = 0;
+                    color.val[1] = 0;
+                    color.val[2] = (uchar)255;
+                }
             }
         }
         if (pubGroundCloud.getNumSubscribers() != 0) {
             for (size_t i = 0; i <= groundScanInd; ++i) {
                 for (size_t j = 0; j < Horizon_SCAN; ++j) {
-                    if (groundMat.at<int8_t>(i, j) == 1)
+                    if (groundMat.at<int8_t>(i, j) == 1) {
                         groundCloud->push_back(fullCloud->points[j + i * Horizon_SCAN]);
+                    }
                 }
             }
         }
@@ -448,6 +564,11 @@ public:
                 if (labelMat.at<int>(i, j) > 0 || groundMat.at<int8_t>(i, j) == 1) {
                     // outliers that will not be used for optimization (always continue)
                     if (labelMat.at<int>(i, j) == 999999) {
+                        cv::Vec3b& color = debugMat.at<cv::Vec3b>(i, j);
+                        color.val[0] = (uchar)255;
+                        color.val[1] = 0;
+                        color.val[2] = 0;
+
                         if (i > groundScanInd && j % 5 == 0) {
                             outlierCloud->push_back(fullCloud->points[j + i * Horizon_SCAN]);
                             continue;
@@ -488,6 +609,10 @@ public:
                 }
             }
         }
+
+        cv::flip(debugMat, debugMat, 0);
+        cv::imshow("rangeMat", debugMat);
+        cvWaitKey(5);
     }
 
     void labelComponents(int row, int col)
@@ -634,16 +759,13 @@ public:
 
 int main(int argc, char** argv)
 {
-
     ros::init(argc, argv, "lego_loam");
 
     cv::namedWindow("rangeMat");
     cv::startWindowThread();
 
     ImageProjection IP;
-
     ROS_INFO("\033[1;32m---->\033[0m Image Projection Started.");
-
     ros::spin();
 
     cv::destroyWindow("rangeMat");

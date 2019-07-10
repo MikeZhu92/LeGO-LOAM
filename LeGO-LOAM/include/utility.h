@@ -45,12 +45,11 @@
 
 //#define PI 3.14159265
 
-#define useApollo  // uncomment this line for apollo
-
 using namespace std;
 
 typedef pcl::PointXYZI  PointType;
 
+extern const bool useAPOLLO = false;  // true for apollo
 extern const string pointCloudTopic = "/velodyne_points";
 extern const string imuTopic = "/imu/data";
 extern const string fileDirectory = "/tmp/";
@@ -63,14 +62,19 @@ extern const string fileDirectory = "/tmp/";
 //extern const float ang_bottom = 15.0+0.1;
 //extern const int groundScanInd = 7;
 
+/* Based on the specs https://velodynelidar.com/lidar/products/manual/HDL-64E%20S3%20manual.pdf
+ Page 50:
+extern const int Horizon_SCAN = 2083;  // 1800
+extern const float ang_res_x = 0.1728; // 0.2
+ */
+
 // HDL-64
 extern const int N_SCAN = 64;
-extern const int Horizon_SCAN = 2083;  // 1800
-extern const float ang_res_x = 0.1728;
-//extern const float ang_res_x = 0.2;  // given
+extern const int Horizon_SCAN = 2088;  // 2088
+extern const float ang_res_x = 0.1724; // 0.1724
 extern const float ang_res_y = 0.427;
 extern const float ang_bottom = 24.9;
-extern const int groundScanInd = 50;
+extern const int groundScanInd = 45;   // 50
 
 // HDL-32E
 // extern const int N_SCAN = 32;
@@ -106,10 +110,10 @@ extern const int systemDelay = 0;
 extern const int imuQueLength = 200;
 
 extern const float sensorMountAngle = 0.0;
-extern const float segmentTheta = 60.0/180.0*M_PI; // decrese this value may improve accuracy
-extern const int segmentValidPointNum = 5;
-extern const int segmentValidLineNum = 3;
-extern const float segmentAlphaX = ang_res_x / 180.0 * M_PI;
+extern const float segmentTheta = 10.0/180.0*M_PI; //org is 60.0 decrese this value may improve accuracy
+extern const int segmentValidPointNum = 5;         // orig is 5
+extern const int segmentValidLineNum = 3;          // orig is 3
+extern const float segmentAlphaX = ang_res_x / 180.0 * M_PI;  // rad
 extern const float segmentAlphaY = ang_res_y / 180.0 * M_PI;
 
 
